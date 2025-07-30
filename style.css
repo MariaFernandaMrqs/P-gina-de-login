@@ -97,8 +97,9 @@ input[type="email"],
     border-radius: 5px;
 }
 
-p {
-    font-size: 16px;
+.senha {
+    font-size: 13px;
+    text-align: right;
 }
 input[type="checkbox"]{
     accent-color: #cae9ffff;
@@ -110,10 +111,14 @@ a{
     color: #000814;
     text-decoration: none;
 }
-.senha{
+.criar{
     text-align: center;
+    font-size: 15px;
 }
-
+.obrigatório{
+    font-size: 12px;
+    text-align: left;
+}
 
 
 

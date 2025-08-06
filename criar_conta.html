@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="conta.css">
     <title>Criação de conta</title>
 </head>
-<body> <!--nome, sobrenome, e-mail, data, senha, confirmação de senha-->
-    <form>
+
+<body>
+    <header>
         <div>
-            <label for="nome">Nome*</label>
-            <input type="text" name="nome" id="nome" placeholder="Nome">
+            <a class="voltar" href="index.html">Voltar</a>
         </div>
-        <div>
-            <label for="nome2">Sobrenome*</label>
-            <input type="text" name="nome2" id="nome2" placeholder="Sobrenome">
-        </div>
-        <div>
-            <label for="email">E-mail*</label>
-            <input type="email" name="email" id="email">
-        </div>
-        <div>
-            <label for="data">Data de nascimento*</label>
-            <input type="date" name="data" id="data">
-        </div>
-        <div>
-            <label for="senha">Senha*</label>
-            <input type="password" name="senha" id="senha"><br>
-            <label for="senha2">Confirmação de senha*</label>
-            <input type="password" name="senha2" id="senha2">
-        </div>
-        <div> <!---->
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-    </form>
+    </header> <!--nome, sobrenome, e-mail, data, senha, confirmação de senha-->
+    <main>
+        <form>
+            <div class="criar">
+                <h1>Criação de uma conta</h1>
+                <div class="barra"></div>
+            </div>
+            <div class="campo">
+                <div class="nome">
+                    <label for="nome">Nome*</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome">
+                
+                    <label for="nome2">Sobrenome*</label>
+                    <input type="text" name="nome2" id="nome2" placeholder="Sobrenome">
+                </div>
+                <d class="email" class="data">
+                    <label for="email">E-mail*</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="data">Data de nascimento*</label>
+                    <input type="date" name="data" id="data">
+                </div>
+                <div class="senha">
+                    <label for="senha">Senha*</label>
+                    <input type="password" name="senha" id="senha"><br>
+                    <label for="senha2">Confirmação de senha*</label>
+                    <input type="password" name="senha2" id="senha2">
+                </div>
+            </div>
+            <div class="regra">
+                <p><strong>Senha segura:</strong></p> <!--regras-->
+                <ul>
+                    <li>Mínimo de 6 dígitos</li>
+                    <li>Mínimo de uma letra maiúscula</li>
+                    <li>Mínimo de um número</li>
+                    <li>Mínimo de um caractere especial (Ex: @, !, #)</li>
+                </ul>
+            </div>
+            <div class="botao">
+                <p>Será enviado um código para o e-mail cadastrado, favor conferir se está correto e clicar em
+                    <strong>Enviar e-mail</strong> abaixo</p>
+                <button>Enviar e-mail</button>
+            </div>
+        </form>
+    </main>
 </body>
+
 </html>

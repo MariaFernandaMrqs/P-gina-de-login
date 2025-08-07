@@ -22,7 +22,7 @@ body{
 }
 .barra{
     background-color: #1b4965ff;
-    width: 260px;
+    width: 100%;
     height: 5px;
     margin-top: 4px;
 }
@@ -34,16 +34,22 @@ main{
     height: calc(100vh - 80px);
 }
 form{
-    background-color: #dee2e6;
-    padding: 60px;
-    border-radius: 30px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: #000814;
+    backdrop-filter: blur(50px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 30px 40px;
     display:flex;
     flex-direction: column;
     gap: 25px;
     outline: none;
 }
 h1{
-    font-size: 30px;
+    color:#ffffff;
+    text-align: center;
+    font-size: 35px;
     text-shadow: 2px 2px 2px #778da9;
 }
 p{
@@ -51,7 +57,7 @@ p{
     padding-top: 15px;
 }
 input::placeholder{
-    color: #a3c0dd;
+    color: #2f5376;
 }
 input{
     width: 100%;
@@ -72,12 +78,12 @@ button{
     border-radius: 20px;
     padding: 10px;
     align-self: center;
+    text-align: center;
     width: 200px;
     border: 1px solid #1b4965ff;
     background-image: linear-gradient(#012a4a, #468faf);
     border-right-width: 4px;
     border-bottom-width: 4px;
-    text-transform: uppercase;
     font-weight: 400;
     cursor: pointer;
 }

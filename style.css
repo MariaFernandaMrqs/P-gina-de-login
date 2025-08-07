@@ -93,6 +93,7 @@ button {
     border-right-width: 4px;
     border-bottom-width: 4px;
     font-weight: 400;
+    cursor: pointer;
 }
 
 input[type="email"],
